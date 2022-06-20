@@ -1,0 +1,24 @@
+{
+  "name": "projeto_11_tweteroo",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Projeto back-end para a construção da API do Tweteroo, um clone do Twitter!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gvasquesdev/Projeto_11_Tweteroo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gvasquesdev/Projeto_11_Tweteroo/issues"
+  },
+  "homepage": "https://github.com/gvasquesdev/Projeto_11_Tweteroo#readme",
+  "dependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
