@@ -22,15 +22,14 @@ app.post('/sign-up', (req,res) => {
 });
 
 app.post("/tweets", (req, res) => {
-    const {tweet, username} = req.body;
+    const {user: username} = req.headers;
+    const {tweet} = req.body;
 
     if(!username || !tweet) {
       res.status(400).send("Por favor, preencha todos os campos");
     }
 
-    const findUser = users.find(user => user.username === username);
-    const avatar = findUser.avatar;
-    console.log(avatar);
+    const avatar = users.find(user => user.username === username).avatar;
     tweets.push({username, tweet, avatar});
     res.status(201).send("Tweet enviado!");
   
